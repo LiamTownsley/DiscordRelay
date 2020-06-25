@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+     function post(message) {
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "https://discordapp.com/api/webhooks/725663641025773646/E7ouCumOUpTAjVp8JdSGRpXyKElrl_JzpfNZYOFdTnHqGq7l9oMTzR6diL0XVlFraCeO", true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send(JSON.stringify({
+        content: message
+}));
+     }
+    </script>
+  </head>
+  <body onload="post("test");"></body>
+</html>
